@@ -2,12 +2,13 @@
 }
 
 .staple-color {
-    background-color: #555555;
+    background-color: #26a69a;
     color: #ffffff;
+    border-color: #00796B;
 }
 
 .staple-color-light {
-    background-color: #666666;
+    background-color: #B2DFDB;
     color: #ffffff;
 }
 
@@ -20,11 +21,11 @@
     color: #ff0000;
 }
 
-.header-link > li > a:hover,
-.header-link > li > a:hover,
-.header-link > li > a:active {
-    color: #ff0000;
-}
+
+    .header-link > li > a:hover,
+    .header-link > li > a:active {
+        color: #ff0000;
+    }
 
 * {
     margin: 0;
@@ -67,6 +68,33 @@
 .search-frame {
     margin-top: 8px;
     margin-bottom: 8px;
-    background-color: #666666;
-    border-color: #666666;
+    background-color: #4db6ac;
+    border-color: #4db6ac;
 }
+
+.head-image {
+    width: 150px;
+    height: 150px;
+    border-color: #ffffff;
+    border-width: 10px;
+    border-radius: 100px;
+    border-style: solid;
+    align-content: center;
+    margin: 5px;
+}
+
+.div-center {
+    text-align: center;
+}
+
+.navbar-inverse {
+    border-color: #080808;
+}
+
+    .navbar-inverse .navbar-brand {
+        color: #dddddd;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #dddddd;
+    }

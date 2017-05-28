@@ -64,13 +64,15 @@
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                    <asp:TextBox CssClass="form-control search-frame staple-color-light" ID="tb_search" runat="server"></asp:TextBox></li>
+                                    <asp:TextBox CssClass="form-control search-frame " ID="tb_search" runat="server"></asp:TextBox></li>
                                 <li><a runat="server" href="~/Account/Register">注册</a></li>
                                 <li><a runat="server" href="~/Account/Login">登录</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <asp:TextBox CssClass="form-control search-frame " ID="tb_search" runat="server"></asp:TextBox></li>
                                 <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %>!</a></li>
                                 <li>
                                     <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="注销" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
@@ -82,13 +84,20 @@
             </div>
         </div>
         <div class="main-container container body-content">
-            <div class="container-right">
-                <div class="container body-content jumbotron">
+            <div class="container-right  div-center">
+                <div class="container body-content jumbotron div-center">
 
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        <asp:Image ID="imgHead" CssClass="head-image" runat="server" ImageUrl="~/Image/ic_head_min.jpg" />
+                        <p>哦上帝，我真想用靴子狠狠踢你的屁股！</p>
+
+                        <p class="lead">属于Dustray的个人网站（博客）正在建设中。</p>
+                        <p class="lead">Since 05-23-2017 Powered by ASP.NET .</p>
+                        <p><a href="http://www.dustray.cn" class="btn btn-primary btn-lg">刷新 &raquo;</a></p>
+
                     </asp:ContentPlaceHolder>
                     <hr />
-                    <p>哦上帝，我真想用靴子狠狠踢你的屁股！</p>
+
                 </div>
 
             </div>
@@ -103,8 +112,8 @@
         </div>
 
 
-        <div class="navbar-inverse">
-            <footer class="container label-white">
+        <div class="navbar-inverse  staple-color">
+            <footer class="container label-white ">
                 <p>Copyright</p>
                 <p>&copy; 2017 - <%: DateTime.Now.Year %> Dustray.cn</p>
                 <p>Designed and Devloped by Dustray Yin Referenced from Models</p>

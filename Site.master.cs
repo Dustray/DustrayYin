@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Web;
@@ -66,7 +67,7 @@ public partial class SiteMaster : MasterPage
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        imgHead.ImageUrl = "~/Image/ic_head.jpg";
     }
 
     protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
