@@ -820,15 +820,7 @@ pre {
         clear: both;
     }
 
-    .row:before,
-    .row:after {
-        display: table;
-        content: " ";
-    }
-
-    .row:after {
-        clear: both;
-    }
+ 
 
 .col-xs-1,
 .col-xs-2,
@@ -880,8 +872,8 @@ pre {
 .col-lg-12 {
     position: relative;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .col-xs-1,
@@ -5014,9 +5006,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
     border-radius: .25em;
 }
 
-.label-white {
-    color: #ffffff;
-}
 
 .label[href]:hover,
 .label[href]:focus {
@@ -5149,13 +5138,13 @@ a.list-group-item.active > .badge,
 
 @media screen and (min-width: 768px) {
     .jumbotron {
-        padding-top: 48px;
-        padding-bottom: 48px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .container .jumbotron {
-        padding-right: 60px;
-        padding-left: 60px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     .jumbotron h1 {

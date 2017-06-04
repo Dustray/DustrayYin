@@ -63,8 +63,15 @@
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/BlogWrite">写博客</a></li>
                                 <li>
-                                    <asp:TextBox CssClass="form-control search-frame " ID="tb_search" runat="server"></asp:TextBox></li>
+                                        <div>
+                                            <input class="form-control search-frame" id="tb_search" placeholder="搜索" />
+                                            <%--<button type="submit" class="btn-search">
+                                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                                </button>--%>
+                                        </div>
+                                </li>
                                 <li><a runat="server" href="~/Account/Register">注册</a></li>
                                 <li><a runat="server" href="~/Account/Login">登录</a></li>
                             </ul>
@@ -85,24 +92,24 @@
         </div>
         <div class="main-container container body-content">
             <div class="container-right  div-center">
-                <div class="container body-content jumbotron div-center">
+                <div class=" frame-box-2 top-align head-frame background-image-right-content text-color-white">
 
-                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-                        <asp:Image ID="imgHead" CssClass="head-image" runat="server" ImageUrl="~/Image/ic_head_min.jpg" />
-                        <p>哦上帝，我真想用靴子狠狠踢你的屁股！</p>
-
+                    <asp:Image ID="imgHead" CssClass="head-image " runat="server" ImageUrl="~/Image/ic_head_super_min.jpg" />
+                    <hr />
+                    <div class="head-message">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://www.weibo.com/u/3059704992?is_hot=1" Target="_blank">微博</asp:HyperLink>
+                        <asp:Label ID="Label1" runat="server" CssClass="text-color-gray-dark" Text="Label">|</asp:Label>
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="https://github.com/Dustray" Target="_blank">GitHub</asp:HyperLink>
                         <p class="lead">属于Dustray的个人网站（博客）正在建设中。</p>
                         <p class="lead">Since 05-23-2017 Powered by ASP.NET .</p>
-                        <p><a href="http://www.dustray.cn" class="btn btn-primary btn-lg">刷新 &raquo;</a></p>
-
-                    </asp:ContentPlaceHolder>
+                       
+                    </div>
                     <hr />
-
                 </div>
 
             </div>
             <div class="container-left">
-                <div class="container body-content">
+                <div class="container">
                     <asp:ContentPlaceHolder ID="MainContent" runat="server">
                     </asp:ContentPlaceHolder>
                     <hr />
@@ -112,8 +119,8 @@
         </div>
 
 
-        <div class="navbar-inverse  staple-color">
-            <footer class="container label-white ">
+        <div class="staple-color">
+            <footer class="container text-color-white">
                 <p>Copyright</p>
                 <p>&copy; 2017 - <%: DateTime.Now.Year %> Dustray.cn</p>
                 <p>Designed and Devloped by Dustray Yin Referenced from Models</p>
