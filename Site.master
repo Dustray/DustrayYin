@@ -63,7 +63,7 @@
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/BlogWrite">写博客</a></li>
+                                <li><a runat="server" href="~/BlogWriteFrame">写博客</a></li>
                                 <li>
                                         <div>
                                             <input class="form-control search-frame" id="tb_search" placeholder="搜索" />

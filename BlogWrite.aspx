@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="BlogWrite.aspx.cs" Inherits="BlogWrite" %>
 
-<!DOCTYPE html>
+<!DOCTYPE>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -26,6 +26,7 @@
         var ue = UE.getEditor('txtEditorContents', {
             initialFrameWidth: null,//宽度随网页变化
             initialFrameHeight: 500,
+            fullscreen :true,
             toolbars: [
                 [
                     'source', //源代码
@@ -52,8 +53,7 @@
                     'pasteplain', //纯文本粘贴模式
                     'removeformat', //清除格式
                     'cleardoc', //清空文档
-
-                    'fullscreen', //全屏
+                    
                 ], [
                     'preview', //预览
                     '|',
