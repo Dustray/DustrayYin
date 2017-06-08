@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title><%: Page.Title %></title>
 
     <asp:PlaceHolder runat="server">
@@ -40,7 +41,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top staple-color">
+        <div class="navbar navbar-inverse navbar-fixed-top staple-color card-shadow cs-small-light">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -56,21 +57,21 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav header-lin">
-                        <li><a runat="server" href="~/">主页</a></li>
+                        <li><a runat="server" href="~/BlogList">博客</a></li>
                         <li><a runat="server" href="~/About">关于</a></li>
                         <li><a runat="server" href="~/Contact">联系方式</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/BlogWriteFrame">写博客</a></li>
+
                                 <li>
-                                        <div>
-                                            <input class="form-control search-frame" id="tb_search" placeholder="搜索" />
-                                            <%--<button type="submit" class="btn-search">
+                                    <div>
+                                        <input class="form-control search-frame" id="tb_search" placeholder="搜索" />
+                                        <%--<button type="submit" class="btn-search">
                                                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                                                 </button>--%>
-                                        </div>
+                                    </div>
                                 </li>
                                 <li><a runat="server" href="~/Account/Register">注册</a></li>
                                 <li><a runat="server" href="~/Account/Login">登录</a></li>
@@ -78,6 +79,7 @@
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/BlogWriteFrame">写博客</a></li>
                                 <li>
                                     <asp:TextBox CssClass="form-control search-frame " ID="tb_search" runat="server"></asp:TextBox></li>
                                 <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %>!</a></li>
@@ -91,22 +93,41 @@
             </div>
         </div>
         <div class="main-container container body-content">
-            <div class="container-right  div-center">
-                <div class=" frame-box-2 top-align head-frame background-image-right-content text-color-white">
+            <div class="container-right  div-center  ">
+                <div class=" frame-box-1 top-align head-frame background-image-right-content  text-color-white card-shadow">
 
-                    <asp:Image ID="imgHead" CssClass="head-image " runat="server" ImageUrl="~/Image/ic_head_super_min.jpg" />
+                    <asp:Image ID="imgHead" CssClass="head-image card-shadow " runat="server" ImageUrl="~/Image/ic_head_super_min.jpg" />
                     <hr />
                     <div class="head-message">
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://www.weibo.com/u/3059704992?is_hot=1" Target="_blank">微博</asp:HyperLink>
-                        <asp:Label ID="Label1" runat="server" CssClass="text-color-gray-dark" Text="Label">|</asp:Label>
-                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="https://github.com/Dustray" Target="_blank">GitHub</asp:HyperLink>
+                        <div>
+                            <div class="btn-group-frame">
+                                <a class="overwrite-btn obtn-link obtn-link-email card-shadow"  title="邮箱" href="mailto:yinxiyue1995@outlook.com">
+                                    <img class="btn-ic" src="Image/ic_email_small.png" />
+                                </a>
+                            </div>
+                            <div class="btn-group-frame">
+                                <a class="overwrite-btn obtn-link obtn-link-qq card-shadow"  title="QQ" href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1360741742">
+                                    <img class="btn-ic" src="Image/ic_qq_small.png" />
+                                </a>
+                            </div>
+                            <div class="btn-group-frame">
+                                <a class="overwrite-btn obtn-link obtn-link-weibo card-shadow" title="微博" href="http://www.weibo.com/u/3059704992?is_hot=1" target="view_window">
+                                    <img class="btn-ic" src="Image/ic_weibo_small.png" />
+                                </a>
+                            </div>
+                            <div class="btn-group-frame">
+                                <a class="overwrite-btn obtn-link obtn-link-github card-shadow" title="GitHub" href="https://github.com/Dustray" target="view_window">
+                                    <img class="btn-ic" src="Image/ic_github_small.png" />
+                                </a>
+                            </div>
+                        </div>
                         <p class="lead">属于Dustray的个人网站（博客）正在建设中。</p>
                         <p class="lead">Since 05-23-2017 Powered by ASP.NET .</p>
-                       
+                        <asp:ContentPlaceHolder ID="HeaderContent" runat="server">
+                        </asp:ContentPlaceHolder>
                     </div>
                     <hr />
                 </div>
-
             </div>
             <div class="container-left">
                 <div class="container">
@@ -115,11 +136,9 @@
                     <hr />
                 </div>
             </div>
-
         </div>
 
-
-        <div class="staple-color">
+        <div class="staple-color card-shadow cs-large-dark">
             <footer class="container text-color-white">
                 <p>Copyright</p>
                 <p>&copy; 2017 - <%: DateTime.Now.Year %> Dustray.cn</p>

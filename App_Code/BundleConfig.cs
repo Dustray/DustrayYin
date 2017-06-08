@@ -33,7 +33,10 @@ namespace DustrayYin
             // 准备生产时，使用 https://modernizr.com 中的生成工具仅选择所需的测试
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                             "~/Scripts/modernizr-*"));
-            
+            //bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/Site.css"));
+            //bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.css"));
+            //bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.min.css"));
+            //bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/MyCSS.css"));
             ScriptManager.ScriptResourceMapping.AddDefinition(
                 "respond",
                 new ScriptResourceDefinition

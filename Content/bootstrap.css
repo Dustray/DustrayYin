@@ -422,7 +422,7 @@ p {
 }
 
 .lead {
-    margin-bottom: 20px;
+    margin-bottom:  0px;
     font-size: 16.099999999999998px;
     font-weight: 200;
     line-height: 1.4;
@@ -515,7 +515,7 @@ h6,
 h1,
 h2,
 h3 {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
@@ -779,8 +779,8 @@ pre {
 }
 
 .container {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -4684,7 +4684,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-inverse {
     background-color: #555555;
-    border-color: #080808;
+    border-color: none;
 }
 
     .navbar-inverse .navbar-brand {
