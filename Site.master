@@ -96,17 +96,25 @@
             <div class="container-right  div-center  ">
                 <div class=" frame-box-1 top-align head-frame background-image-right-content  text-color-white card-shadow">
 
+                    <div class="head-search-frame head-search-transition">
+                        <div class="overwrite-btn obtn-link obtn-link-search card-shadow head-search-btn head-search-transition" title="search">
+                            <img class="btn-ic" src="Image/ic_search_small.png" />
+                        </div>
+                        <input class=" head-search-input head-search-transition" id="tb_search" placeholder="搜索" />
+                    </div>
+
                     <asp:Image ID="imgHead" CssClass="head-image card-shadow " runat="server" ImageUrl="~/Image/ic_head_super_min.jpg" />
                     <hr />
                     <div class="head-message">
+                        
                         <div>
                             <div class="btn-group-frame">
-                                <a class="overwrite-btn obtn-link obtn-link-email card-shadow"  title="邮箱" href="mailto:yinxiyue1995@outlook.com">
+                                <a class="overwrite-btn obtn-link obtn-link-email card-shadow" title="邮箱" href="mailto:yinxiyue1995@outlook.com">
                                     <img class="btn-ic" src="Image/ic_email_small.png" />
                                 </a>
                             </div>
                             <div class="btn-group-frame">
-                                <a class="overwrite-btn obtn-link obtn-link-qq card-shadow"  title="QQ" href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1360741742">
+                                <a class="overwrite-btn obtn-link obtn-link-qq card-shadow" title="QQ" href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1360741742">
                                     <img class="btn-ic" src="Image/ic_qq_small.png" />
                                 </a>
                             </div>

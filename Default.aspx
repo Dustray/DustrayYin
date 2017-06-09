@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="frame-box-top-align fb-margn ">
-        <div class="frame-box-2 card-shadow">
+        <div class="frame-box-title card-shadow">
             <p class="lead title-text-align tta-center">最新文章</p>
         </div>
         <div class="frame-box-2 card-shadow">
