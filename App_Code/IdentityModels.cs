@@ -16,7 +16,7 @@ namespace DustrayYin
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("MyConnection")
+            : base("DefaultConnection")
         {
         }
     }
